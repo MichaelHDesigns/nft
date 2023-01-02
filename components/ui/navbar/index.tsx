@@ -4,7 +4,7 @@ import { Disclosure } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import { useAccount, useNetwork } from '@hooks/web3';
 import ActiveLink from '../link';
-import Walletbar from '../navbar/walletbar';
+import Walletbar from '../navbar/Walletbar';
 
 const navigation = [
   { name: 'Marketplace', href: '/', current: true },
