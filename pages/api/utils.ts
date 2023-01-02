@@ -6,7 +6,7 @@ import { NftMarketContract } from '@_types/nftMarketContract';
 import * as util from 'ethereumjs-util';
 
 const NETWORKS = {
-  '5777': 'GANACHE',
+  '2330': 'GANACHE',
 };
 
 const abi = contract.abi;
@@ -33,7 +33,7 @@ export const addressCheckMiddleware = async (
   return new Promise(async (resolve, reject) => {
     const message = req.session.get('message-session');
     const provider = new ethers.providers.JsonRpcProvider(
-      'http://127.0.0.1:7545'
+      'http://127.0.0.1:8545'
     );
     const contract = new ethers.Contract(
       contractAddress,
